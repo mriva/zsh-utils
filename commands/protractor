@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /var/www/soisy/webapp/scripts/
+./node_modules/protractor/bin/protractor protractor-conf.js --specs /var/www/soisy/webapp/spec/$1

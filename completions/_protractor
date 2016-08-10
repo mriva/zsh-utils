@@ -1,0 +1,3 @@
+#compdef protractor
+
+_files -W /var/www/soisy/webapp/spec/

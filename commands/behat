@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd /var/www/soisy/backend/
+
+if [ -z "$1" ]
+then
+    bin/behat --colors --format=progress
+else
+    bin/behat $@
+fi

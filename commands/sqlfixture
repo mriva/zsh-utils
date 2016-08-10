@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd /var/www/soisy/backend/
+
+if [ -z "$1" ]
+then
+    echo bin/idx test:cache:yml:all
+else
+    echo bin/idx test:cache:yml $1
+fi
