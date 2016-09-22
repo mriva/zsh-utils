@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/var/www/soisy/backend/app/console broadway:event-store:schema:drop
+/var/www/soisy/backend/app/console broadway:event-store:schema:init
+/var/www/soisy/backend/app/console soisy:elastic:index:create --drop
