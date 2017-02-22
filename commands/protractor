@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 cd /var/www/soisy/webapp/scripts/
-./node_modules/protractor/bin/protractor protractor-conf.js --specs /var/www/soisy/webapp/spec/$1
+
+if [[ $1 == *SpecShop.js ]]; then
+    ./node_modules/protractor/bin/protractor protractor-conf-shop.js --specs /var/www/soisy/docs/specs/$1
+else
+    ./node_modules/protractor/bin/protractor protractor-conf.js --specs /var/www/soisy/docs/specs/$1
+fi

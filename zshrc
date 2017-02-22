@@ -88,3 +88,13 @@ source $ZSH/oh-my-zsh.sh
 
 PROMPT='%{%f%b%k%}$(build_prompt)
 %# '
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /home/vagrant/google-cloud-sdk/path.zsh.inc ]; then
+  source '/home/vagrant/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /home/vagrant/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/home/vagrant/google-cloud-sdk/completion.zsh.inc'
+fi
