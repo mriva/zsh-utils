@@ -89,6 +89,13 @@ source $ZSH/oh-my-zsh.sh
 PROMPT='%{%f%b%k%}$(build_prompt)
 %# '
 
+alias so="cd /var/www/soisy"
+alias be="cd /var/www/soisy/backend"
+alias pu="bin/phpunit -c app"
+alias puf="bin/phpunit -c app --filter "
+alias puaf="bin/phpunit -c app --exclude-group none --filter "
+alias ac="app/console"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f /home/vagrant/google-cloud-sdk/path.zsh.inc ]; then
   source '/home/vagrant/google-cloud-sdk/path.zsh.inc'

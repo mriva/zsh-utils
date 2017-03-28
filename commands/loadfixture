@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd /var/www/soisy/backend
-php app/console soisy:load:fixtures --no-interaction --delete-contracts ../docs/fixtures/build $1
+php app/console soisy:load:fixtures --no-interaction --delete-contracts ../docs/fixtures/build $*
