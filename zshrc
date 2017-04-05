@@ -93,6 +93,7 @@ alias so="cd /var/www/soisy"
 alias be="cd /var/www/soisy/backend"
 alias pu="bin/phpunit -c app"
 alias puf="bin/phpunit -c app --filter "
+alias pua="bin/phpunit -c app --exclude-group none"
 alias puaf="bin/phpunit -c app --exclude-group none --filter "
 alias ac="app/console"
 
