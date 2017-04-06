@@ -110,3 +110,7 @@ fi
 if [ -f /home/vagrant/google-cloud-sdk/completion.zsh.inc ]; then
   source '/home/vagrant/google-cloud-sdk/completion.zsh.inc'
 fi
+
+if [ -f /home/vagrant/.zshrc.local ]; then
+  source /home/vagrant/.zshrc.local
+fi
