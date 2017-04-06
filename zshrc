@@ -97,6 +97,10 @@ alias pua="bin/phpunit -c app --exclude-group none"
 alias puaf="bin/phpunit -c app --exclude-group none --filter "
 alias ac="app/console"
 
+alias csfix="bin/idx code-standard:fix"
+alias xdoff="sudo php5dismod xdebug"
+alias xdon="sudo php5enmod xdebug"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f /home/vagrant/google-cloud-sdk/path.zsh.inc ]; then
   source '/home/vagrant/google-cloud-sdk/path.zsh.inc'
