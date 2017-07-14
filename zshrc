@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/vagrant/.oh-my-zsh
 export ZSH_UTILS=/home/vagrant/.zsh-utils
-export ZSH_CUSTOM=/home/vagrant/.zsh-utils/custom
+export ZSH_CUSTOM=/home/vagrant/.zsh-utils/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
