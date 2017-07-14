@@ -1,12 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/vagrant/.oh-my-zsh
 export ZSH_UTILS=/home/vagrant/.zsh-utils
+export ZSH_CUSTOM=/home/vagrant/.zsh-utils/custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="teoss"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -100,16 +101,6 @@ alias ac="app/console"
 alias csfix="bin/idx code-standard:fix"
 alias xdoff="sudo php5dismod xdebug"
 alias xdon="sudo php5enmod xdebug"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /home/vagrant/google-cloud-sdk/path.zsh.inc ]; then
-  source '/home/vagrant/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /home/vagrant/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/home/vagrant/google-cloud-sdk/completion.zsh.inc'
-fi
 
 if [ -f /home/vagrant/.zshrc.local ]; then
   source /home/vagrant/.zshrc.local
